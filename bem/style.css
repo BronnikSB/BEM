@@ -16,6 +16,8 @@
 .LogoImg{
     padding-top: 100px;
     padding-left: 30px;
+    width: 60px;
+    height: 60px;
 }
 
 .textMenu{
@@ -89,5 +91,16 @@
 .list__installation-number{
     margin-top: 20px;
     margin-bottom: 20px;   
+}
+
+.text__Responsibilities {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.subtitle__company {
+    color: rgb(95, 95, 95);
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
