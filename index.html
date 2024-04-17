@@ -25,22 +25,15 @@
         <section class="section section__welcome">
             <h2 class="subtitle subitle__welcom" id="welcome">Немного обо мне:</h2>
             <p class="text text__welcom">
-                <img src="Images/photo.png" class="photo_prof" alt="myPhoto"> Всем привет! Меня зовут Бронников Сергей.<br>Я увлечённый инженер-тестировщик с большим желанием учиться
-                и развиваться. Начал свой путь в IT с арбитража трафика,
-                где занимался фильтрацией трафика на рекламной площадке Facebook, настраивал лендинги на передачу заявок
-                по API в телеграмм и партнёрские сети,
-                после решил пойти в тестирование, т.к опыта в тестировании особо не было, принял решение пойти учиться
-                на курсы Тестирования ПО в Академию «Шаг»,
-                параллельно устроился в техподдержку компании Тензор, после чего и перевёлся на должность
-                Инженера-тестировщика в этой же компании.
-                В дальнейшем есть огромное желание продолжить свой путь в автоматизированном тестировании, которое
-                сейчас упорно изучаю.
+                <img src="Images/photo.png" class="photo_prof" alt="myPhoto"> Я увлечённый инженер-тестировщик с большим желанием учиться и развиваться. Начал свой путь в IT с арбитража трафика, где занимался фильтрацией трафика на рекламной площадке Facebook, настраивал лендинги на передачу заявок по API в телеграмм и партнёрские сети, после решил пойти в тестирование. 
+Т.к опыта в тестировании особо не было, принял решение пойти учиться на курсы Тестирования ПО в Академию «Шаг», параллельно устроился в техподдержку компании Тензор, после чего и перевёлся на должность Инженера-тестировщика в этой же компании, в данной компании занимался тестированием приложения бухгалтерского учета, тестировал только frontend, поэтому немного наскучило и захотелось чего-то большего. В данный момент работаю в компании Solit Clouds, где занимаюсь тестированием backend продуктов, сложно, но интересно;-), стараюсь постоянно развиваться и не стоять на месте.
             </p>
 
         </section>
         <section class="section section__Installation">
             <h1 class="title title__Installation" id="experience">Опыт работы</h1>
             <ul class="list list__features">
+                <li class="list list__features-square">Компания "Solit Clouds": Старший тестировщик ПО - <p id="time-since-date"></p></li>
                 <li class="list list__features-square">Компания "Тензор": Инженер-тестировщик - 1 год</li>
                 <li class="list list__features-square">Компания "Тензор": Техническая поддержка - 6 месяцев</li>
                 <li class="list list__features-square">Арбитраж трафика: Трафик-менеджер - 9 мес</li>
@@ -98,6 +91,22 @@
             </ul>
         </section>
     </div>
+  <script>
+    const startDate = new Date("2023-01-01T00:00:00Z");
+    const monthAndYearElem = document.getElementById("time-since-date");
+
+    function updateMonthAndYearSinceDate() {
+      const currentDate = new Date();
+      const diffInMilliseconds = currentDate - startDate;
+
+      const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30.4375));
+      const years = Math.floor(months / 12);
+
+      monthAndYearElem.textContent = `${months % 12 === 0 ? 12 : months % 12} months, ${years} years`;
+    }
+
+    setInterval(updateMonthAndYearSinceDate, 1000);
+  </script>
 </body>
 
 </html>
