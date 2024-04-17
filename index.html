@@ -102,7 +102,7 @@
       const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30.4375));
       const years = Math.floor(months / 12);
 
-      monthAndYearElem.textContent = `${months % 12 === 0 ? 12 : months % 12} months, ${years} years`;
+      monthAndYearElem.textContent = ` ${years} год ${months % 12 === 0 ? 12 : months % 12} месяцев`;
     }
 
     setInterval(updateMonthAndYearSinceDate, 1000);
