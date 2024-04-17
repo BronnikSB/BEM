@@ -145,3 +145,7 @@ body {
   height: 95px;
   border-radius: 200px;
 }
+
+#time-since-date {
+  display: inline-block;
+}
