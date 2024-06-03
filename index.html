@@ -17,6 +17,7 @@
             <a class="menu_nav" href="#welcome">Обо мне</a>
             <a class="menu_nav" href="#experience">Опыт работы</a>
             <a class="menu_nav" href="#education">Образование</a>
+            <a class="menu_nav" href="#courses">Сертификаты</a>
             <a class="menu_nav" href="#stack">Стек</a>
             <a class="menu_nav" href="#contact">Контакты</a>
         </div>
@@ -34,12 +35,18 @@
             <h1 class="title title__Installation" id="experience">Опыт работы</h1>
             <ul class="list list__features">
                 <li class="list list__features-square">Компания "Solit Clouds": Старший тестировщик ПО - <p id="time-since-date"></p></li>
+                <p class="text text__Responsibilities">
+                    - Разработка тестовой документации (формирование плана
+                    тестирования,<br> разработка тест планов, тест кейсов, подготовка
+                    документации, составление отчетов по результатам тестирования)<br>
+                    - Проведение функционального, регрессионного, интеграционного,
+                    системного и нагрузочного тестирования<br> приложений с фиксированием
+                    результатов, регистрацией и контролем исправления дефектов<br>
+                    - Тестирование проектной и пользовательской документации<br>    
+                    - Взаимодействие с внутренними и внешними производственными
+                    командами
+                </p>
                 <li class="list list__features-square">Компания "Тензор": Инженер-тестировщик - 1 год</li>
-                <li class="list list__features-square">Компания "Тензор": Техническая поддержка - 6 месяцев</li>
-                <li class="list list__features-square">Арбитраж трафика: Трафик-менеджер - 9 мес</li>
-            </ul>
-            <h2 class="subtitle subitle__Responsibilities">Обязанности:</h3>
-                <p class="subtitle subtitle__company">Компания "Тензор": Инженер-тестировщик</p>
                 <p class="text text__Responsibilities">
                     - Создание и поддержка в актуальном состоянии тестовой документации<br>
                     - Тестирование сервиса «Отчётность в госорганы» (Проведение Smoke, Regression, Functional
@@ -48,12 +55,12 @@
                     - Разбор и поддержка автотестов(Python+selenium) <br>
                     - Анализ ошибок от клиентов.<br />
                 </p>
-                <p class="subtitle subtitle__company">Компания "Тензор": Техническая поддержка</p>
+                <li class="list list__features-square">Компания "Тензор": Техническая поддержка - 6 месяцев</li>
                 <p class="text text__Responsibilities">
-                    Консультация клиентов по продукту СБИС Электронная отчетность. <br>
-                    Выявление ошибок, проблем во время работы со СБИС на пк клиентов и их решение
+                    -Консультация клиентов по продукту СБИС Электронная отчетность. <br>
+                    -Выявление ошибок, проблем во время работы со СБИС на пк клиентов и их решение
                 </p>
-                <p class="subtitle subtitle__company">Арбитраж трафика: Трафик-менеджер</p>
+                <li class="list list__features-square">Арбитраж трафика: Трафик-менеджер - 9 мес</li>
                 <p class="text text__Responsibilities">
                     -Подготовка ссылок, с фильтрацией трафика, <br>
                     -Работа с кодом html, css,php. Настройка лендингов на передачу заявок по API в телеграмм и
@@ -61,11 +68,26 @@
                     -Настройка рекламных компаний на Facebook, <br>
                     -Контроль и анализ статистики работы рекламных компаний
                 </p>
+            </ul>
         </section>
         <section class="section section__welcome">
             <h1 class="title title__welcom" id="education">Образование</h1>
-            <p class="text text__education">Академия "Шаг": Курс "Тестирование (QA)"</p>
-
+            <p class="text text__education">
+                Академия труда и социальных отношений.
+                - Менеджмент: с 2022г. по 2026г.
+            </p>
+        </section>
+        <section class="section section__welcome">
+            <h1 class="title title__welcom" id="courses">Сертификаты</h1>
+            <p class="text text__education">
+                - ISTQB: Certified Tester Foundation Level<br>
+                - Академия "Шаг": Тестирование ПО<br>
+                - Stepik: Интерактивный тренажер по SQL<br>
+                - Stepik: Автоматизация тестирования с помощью Selenium и Python<br>
+                - Sololearn: HTML Fundamentals<br>
+                - Sololearn: CSS<br>
+                - Sololearn: SQL Fundamentals<br>
+            </p>
         </section>
         <section class="section section__welcome">
             <h1 class="title title__welcom" id="stack">Мой Стек</h1>
@@ -95,21 +117,7 @@
             </ul>
         </section>
     </div>
-  <script>
-    const startDate = new Date("2022-07-15T00:00:00Z");
-    const monthAndYearElem = document.getElementById("time-since-date");
-
-    function updateMonthAndYearSinceDate() {
-      const currentDate = new Date();
-      const diffInMilliseconds = currentDate - startDate;
-
-      const months = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 30.4375));
-      const years = Math.floor(months / 12);
-
-      monthAndYearElem.textContent = ` ${years} год ${months % 12 === 0 ? 12 : months % 12} месяцев`;
-    }
-
-    setInterval(updateMonthAndYearSinceDate, 1000);
+  <script src="./script.js">
   </script>
 </body>
 
